@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Macstore</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+	
+	<script src="js/jquery-3.2.0.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/flex.css">
+	
+	<!-- start bxslider -->
+	<script src="js/bxslider/jquery.bxslider.min.js"></script>
+	<link href="js/bxslider/jquery.bxslider.css" rel="stylesheet" />
+	<!-- end bxslider -->
+</head>
+<body>
+<div class="wrapper">
+	<header class="header-desktop">
+		<div class="box-content">
+			<nav class="main-menu ">
+				<ul>
+					<li>
+						<a href="">Apple Store</a>
+					</li>
+					<li>
+						<a href="">Accessories</a>
+					</li>
+					<li>
+						<a href="">Speaker</a>
+					</li>
+					<li>
+						<a href="">Headphone</a>
+					</li>
+					<li>
+						<a href="">Healthy</a>
+					</li>
+					<li>
+						<a href="">Other best choice</a>
+					</li>
+				</ul>
+			</nav>	
+		</div>
+		
+	</header>
+	<header class="header-mobile">haha</header>	
+	<div class="body">
+		<section class="product-logo bg-fa">
+			<div class="box-content ">
+				<div class="items flex justify-center">
+					<div class="item">
+						<img class="alignnone wp-image-3613 size-full" src="img/icon-09.jpg" width="375" height="458">
+					</div>
+					<div class="item">
+						<img class="alignnone wp-image-3613 size-full" src="img/icon-13.jpg">
+					</div>
+					<div class="item">
+						<img class="alignnone wp-image-3613 size-full" src="img/icon-11.jpg">
+					</div>
+					<div class="item">
+						<img class="alignnone wp-image-3613 size-full" src="img/icon-14.jpg">
+					</div>
+					<div class="item">
+						<img class="alignnone wp-image-3613 size-full" src="img/icon-12.jpg">
+					</div>
+					<div class="item">
+						<img class="alignnone wp-image-3613 size-full" src="img/icon-10-10.jpg">
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="wpb_wrapper">
+			<div class="wpb_revslider_element">
+				<ul class="bxslider">
+				  	<li><img src="img/1.jpg" title="This is iPhone 7" /></li>
+				  	<li><img src="img/2.jpg" title="A touch of genius" /></li>
+				 	<li><img src="img/3.jpg" title="The new generation watch" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer></footer>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+	  $('.bxslider').bxSlider({
+		  	mode: 'fade',
+		  	captions: true,
+		  	pager: false,
+		  	speed: 800
+		});
+	});
+</script>
+</body>
+</html>
