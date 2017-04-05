@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/flex.css">
+	<link rel="stylesheet" type="text/css" href="css/bxSlider.css">
 	
 	<!-- start bxslider -->
 	<script src="js/bxslider/jquery.bxslider.min.js"></script>
@@ -74,9 +75,27 @@
 		<div class="wpb_wrapper">
 			<div class="wpb_revslider_element">
 				<ul class="bxslider">
-				  	<li><img src="img/1.jpg" title="This is iPhone 7" /></li>
-				  	<li><img src="img/2.jpg" title="A touch of genius" /></li>
-				 	<li><img src="img/3.jpg" title="The new generation watch" /></li>
+				  	<li>
+				  		<img src="img/3.jpg" title="iPhone 7" />
+				  		<div class="caption"> 
+					        <div class="caption-main">iPhone 7</div>
+					        <div class="caption-sub">This is 7</div>
+					    </div>
+				  	</li>
+				  	<li>
+				  		<img src="img/1.jpg" title="Macbook Pro" />
+				  		<div class="caption"> 
+					        <div class="caption-main">Macbook Pro</div>
+					        <div class="caption-sub">A touch of genius</div>
+					    </div>
+				  	</li>
+				 	<li>
+				 		<img src="img/2.jpg" title="Apple Watch" />
+				 		<div class="caption"> 
+					        <div class="caption-main">Apple Watch</div>
+					        <div class="caption-sub">The new generation watch</div>
+					    </div>
+				 	</li>
 				</ul>
 			</div>
 		</div>
@@ -87,9 +106,11 @@
 	$(document).ready(function(){
 	  $('.bxslider').bxSlider({
 		  	mode: 'fade',
-		  	captions: true,
+		  	captions: false,
 		  	pager: false,
-		  	speed: 800
+		  	speed: 800,
+		  	auto: true,
+		  	pause: 8000
 		});
 	});
 </script>
