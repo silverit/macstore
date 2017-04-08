@@ -3,10 +3,13 @@
 <head>
 <meta charset="utf-8">
 	<title>Macstore</title>
-	 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
 	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+	<script src="js/jquery-3.2.0.min.js"></script>
 	<link rel='stylesheet' id='deploy_mikado_google_fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/flex.css">
 </head>
@@ -38,11 +41,59 @@
 			</nav>	
 		</div>
 	</header>
-	<header class="header-mobile">haha</header>	
+	<header class="header-mobile">
+		<div class="header-top">
+			<div class="header-box">
+	            <span class="menu-opener flex v-align-center">
+	                <i class="fa fa-bars "></i>
+	            </span>
+	            <div class="header-mobile-logo flex justify-center v-align-center">
+	            <a href="#">
+	            	<img src="http://www.macstores.vn/wp-content/uploads/2017/03/logo-viendong.png" alt="mobile-logo">
+	            </a>
+			        
+				</div>
+            </div>
+		</div>
+		<div class="menu-mobile">
+			<ul class="menu-dropdown">
+				<li class="menu-item">
+					<a href="http://www.macstores.vn/apple-store/macbook-pro/">
+						<span>Apple Store</span>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a href="http://www.macstores.vn/apple-store/macbook-pro/">
+						<span>Accessories</span>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a href="http://www.macstores.vn/apple-store/macbook-pro/">
+						<span>Speaker</span>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a href="http://www.macstores.vn/apple-store/macbook-pro/">
+						<span>Headphone</span>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a href="http://www.macstores.vn/apple-store/macbook-pro/">
+						<span>Healthy</span>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a href="http://www.macstores.vn/apple-store/macbook-pro/">
+						<span>Other best choice</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
 	<div class="body">
 		<section class="product-logo bg-fa">
 			<div class="box-content ">
-				<div class="items flex justify-center">
+				<div class="items flex wrap justify-center">
 					<div class="item">
 						<img class="alignnone wp-image-3613 size-full" src="img/icon-09.jpg" width="375" height="458">
 					</div>
@@ -64,9 +115,62 @@
 				</div>
 			</div>
 		</section>
-		<section class="product-list">	
+		<section class="product-menu">
 			<div class="box-content">
-				<ul class="products ">
+	 			<div class="flex justify-center pm-block">
+					<a href=""> 13-inch</a>
+					<a href=""> 15-inch</a>
+				</div>
+				<div class="flex justify-space-arroud pm-block small-menu">
+					<a class="item active" href="#">Sản phẩm </a>
+					<a class="item" href="#">Overview </a>
+					<a class="item" href="#">Hiệu năng</a>
+					<a class="item" href="#">Thông số kỹ thuật</a>
+					<a class="item" href="#">Đập hộp</a>
+					<a class="item" href="#">Tài liệu sử dụng</a>
+				</div>
+	 		</div>
+		</section>
+		<section class="product-list">
+			
+			<div class="box-content">
+				<div class="product-top flex">
+					<label class="product-title">
+						Catalog A
+					</label>
+				</div>
+				<ul class="products flex wrap">
+					<li class="product">
+						<div class="product-content">
+							<div class="product-image">
+								<a href="google.com">
+									<img src="img/product_img.jpg">
+								</a>
+							</div>
+							<div class="product-info">
+								<a href="www.google.com">
+									<h6> Loa JBL Go </h6>
+									<div class="product-short-description">
+										<ul>
+											<li>Kết nối Bluetooth</li>
+											<li>Công suất 3W</li>
+											<li>Nặng 130.4 gram</li>
+											<li>3.5mm kết nối dây</li>
+											<li>Pin 5 giờ (volume 60)</li>
+										</ul>
+									</div>
+									<span class="price">
+										<span class="amount">790.000&nbsp;
+											<span class="currency">₫</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="product-button">
+								<a href="/loa/?add-to-cart=4024"  class="btn btn-medium">        <span class="mkdf-btn-text">Thêm vào giỏ</span></a>
+							</div>
+						</div>
+					</li>
 					<li class="product">
 						<div class="product-content">
 							<div class="product-image">
@@ -197,10 +301,9 @@
 	</div>
 	<footer>
 		<div class="footer-con footer-holder">
-			
 			<div class="footer-top">
 				<div class="box-content">
-					<div class="footer-column flex">
+					<div class="footer-column flex wrap">
 						<div class="footer-list">
 							<p><b>Apple Store</b><br>
 							Apple Watch<br>
@@ -262,10 +365,16 @@
 					</div>
 				</div>
 			</div>
-			
 		</div>
-		
 	</footer>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  	$('.menu-opener').click(function(){
+		  		$('.menu-mobile').slideToggle();
+		  	})
+		});
+	</script>
+	
 </div>
 
 </body>
