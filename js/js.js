@@ -3,17 +3,15 @@ $(document).ready(function(){
   		$('.menu-mobile').slideToggle();
   	})
   	var slider = $('.bxslider').bxSlider({
-	  pagerCustom: '#bx-pager'
+  		speed: 0,
+		pagerCustom: '#bx-pager'
 	});
-  	$('#bx-pager a').on('hover', function() {
-		silder.goToSlide($(this).attr('data-slide-index'));
+	$("#bx-pager li").hover(function(){
+		var newSlideNo = $($(this).find("a")[0]).attr('data-slide-index');
+     	if(newSlideNo != slider.getCurrentSlide()){
+        	slider.goToSlide(newSlideNo);
+     	}
 	});
-	$("#bx-pager a").hover(function(){
-     var newSlideNo = $(this).attr('data-slide-index')
-     if(newSlideNo != slider.getCurrentSlide()){
-        slider.goToSlide(newSlideNo);
-     }
-  });
   	// $('.bxslider').bxSlider();
 
 
